@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Active Tournaments</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Game</th>
+        <th>Date</th>
+        <th>Players Joined</th>
+        <th>Action</th>
+    </tr>
+    {% for t in tournaments %}
+    <tr>
+        <td>{{ t.name }}</td>
+        <td>{{ t.game_name }}</td>
+        <td>{{ t.start_date }}</td>
+        <td>{{ t.players|length }} / {{ t.max_players }}</td>
+        <td>
+            <form action="{{ url_for('join_tournament', tournament_id=t.id) }}" method="POST">
+                <button type="submit" class="btn">Join Now</button>
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h3>Registered Players</h3>
+<ul>
+    {% for p in players %}
+    <li>{{ p.nickname }} ({{ p.email }})</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Player Registration</h2>
+<form method="POST">
+    <p>Name: <input type="text" name="name" required></p>
+    <p>Email: <input type="email" name="email" required></p>
+    <p>Nickname: <input type="text" name="nickname" required></p>
+    <button type="submit" class="btn">Register</button>
+</form>
+{% endblock %}

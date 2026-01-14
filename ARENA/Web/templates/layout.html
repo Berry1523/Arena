@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ARENA System</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background-image: url('/static/bg.jpeg'); background-size: cover; background-attachment: fixed; background-position: center; }
+        .container { max-width: 800px; margin: auto; background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { background-color: #1a1a1a; color: #ffffff; padding: 15px; border-radius: 8px; text-align: center; }
+        nav a { margin-right: 15px; text-decoration: none; font-weight: bold; color: #333; }
+        .btn { background-color: #007bff; color: white; padding: 5px 10px; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ARENA</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/register">Register</a>
+            <a href="/tournaments">Tournaments</a>
+        </nav>
+        <hr>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
