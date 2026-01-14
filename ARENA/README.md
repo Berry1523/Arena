@@ -2,7 +2,7 @@
 **Course:** Software Engineering (SE)
 **Group Members:**
 * Muhammad Ibrahim
-* Muhammad hasseb ali haaider
+* Haseeb Ali Haider
  
 
 ## Project Overview
