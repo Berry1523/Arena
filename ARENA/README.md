@@ -1,9 +1,9 @@
 # ARENA: Gaming Community Platform
 **Course:** Software Engineering (SE)
 **Group Members:**
-* Muhammad Ekrash
-* Muhammad Farhan Khizer
-* Tanveer-UL-Hassan
+* Muhammad Ibrahim
+* Muhammad hasseb ali haaider
+ 
 
 ## Project Overview
 ARENA is a unified platform designed to host tournaments for multiple games (Tic-Tac-Toe, Chess, etc.) under a single infrastructure.
@@ -31,4 +31,4 @@ This repository contains the progressive development of the system across two sp
   3. Open browser to `http://127.0.0.1:5000`
 
 ---
-*Submitted to Sir Ahmad Sohail Aslam*
+ 
